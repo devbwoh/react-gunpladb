@@ -49,7 +49,8 @@ const GunplaTable = () => {
 			</tr>
 			{units.map((unit, index) => 
 				<tr key={index}>
-					<td><img src={`https://react-gunpladb-bajus.run.goorm.io/images/${unit.filename}`} className='boxart'/></td>
+						   {/* <td><img src={`https://react-gunpladb-bajus.run.goorm.io/images/${unit.filename}`} className='boxart'/></td> */}
+					<td>{unit.filename}</td>
 					<td>{unit.name}</td>
 					<td>{unit.model}</td>
 					<td>{unit.grade}</td>
